@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Реєстрація користувача</title>
+</head>
+<body>
+    <h2>Форма реєстрації користувача</h2>
+    
+        <li>
+            <a href="https://G-Unit1994.github.io/Beetroot-Homeworks/Beetroot-Homework/Form/index.html"></a>
+        </li>
+    </ul>
+    <form action="#" method="post" id="registration-form">
+        <div>
+            <label for="full_name">Повне ім'я:</label>
+            <input type="text" name="full_name" id="full_name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="password2">Підтвердіть Пароль:</label>
+            <input type="password2" name="password2" id="password2" required>
+        </div>
+        <div>
+            <label">Стать:</label>
+            <label for="male">Чоловік:</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Жінка:</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+        </div>
+        <div>
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="course">Курс:</label>
+            <select name="course" id="course" required>
+                <option value="course"></option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+            </select>
+    </div>
+    <div>
+        <label for="address">Повна адреса проживання:</label>
+        <textarea name="address" id="address" required></textarea>
+    </div>
+    <div>
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Погоджуюсь з умовами конфідеціальності</label>
+    </div>
+    <div class="button-container"> 
+        <button type="submit">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </div>
+    </form>
+</body>
+</html>
