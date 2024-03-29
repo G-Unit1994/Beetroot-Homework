@@ -7,230 +7,184 @@
 <!-- Google Fonts -->
 <link rel="stylesheet" href="css/fonts.css">
 <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/variable.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="content-wrapper content-wrapper__flex-row">
-          <div class="header-logo">
-            <a href="#" class="logo-link">
-              <svg class="logo-image">
-                <image xlink:href="./images/logo.svg#logo-icon" />
+        <div class="content-wrapper header__inner">
+          <div class="header__logo">
+            <a href="#" class="logo__link">
+              <svg class="logo__image">
+                <image xlink:href="./images/header-logo.svg" />
               </svg>
             </a>
           </div>
-          <nav class="nav header-nav">
-            <ul class="nav-list">
-              <li class="nav-list-item header-list-item">
-                <a href="#" class="nav-link">Home</a>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item header__list-item">
+                <a href="#" class="nav__link">Home</a>
               </li>
-              <li class="nav-list-item header-list-item">
-                <a href="#" class="nav-link">Services</a>
+              <li class="nav__list-item header__list-item">
+                <a href="#" class="nav__link">Services</a>
               </li>
-              <li class="nav-list-item header-list-item">
-                <a href="#" class="nav-link nav-link--active">About</a>
+              <li class="nav__list-item header__list-item">
+                <a href="#" class="nav__link nav__link--active">About</a>
               </li>
-              <li class="nav-list-item header-list-item">
-                <a href="#" class="nav-link">Contacts</a>
+              <li class="nav__list-item header__list-item">
+                <a href="#" class="nav__link">Contacts</a>
               </li>
             </ul>
           </nav>
-          <button type="submit" class="header-button">Callback</button>
+          <button type="submit" class="header__button">Callback</button>
         </div>
       </header>
       <hr class="horizontal-line" />
 
       <main class="main">
         <section class="about">
-          <div class="content-wrapper">
-            <h1 class="about-title">WHO WE ARE</h1>
-            <p class="about-text">
+          <div class="content-wrapper about__inner">
+            <h1 class="about__title">WHO WE ARE</h1>
+            <p class="about__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div class="about-cards">
-              <div class="about-card-item">
-                <div class="about-image-wrap">
-                  <img
-                    src="./images/no-photo.png"
-                    alt="John Handson"
-                    class="about-image"
-                  />
-                  <div class="about-overlay">
-                    <div class="about-social-icons">
-                      <a
-                        href="https://twitter.com/?lang=en"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <image xlink:href="./images/twitter.svg#twitter-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.facebook.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <image xlink:href="./images/facebook.svg#facebook-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.instagram.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <image
-                            xlink:href="./images/instagram.svg#instagram-icon"
-                          />
-                        </svg>
-                      </a>
+            <!-- About Cards start -->
+            <div class="about__cards">
+              <div class="about__card-item">
+                <div class="about__image-wrap">
+                  <img src="./images/no-photo.png" alt="John Handson" class="about__image" />
+                  <div class="about__overlay">
+                    <div class="about__social-icons">
+                      <a href="https://twitter.com/?lang=en"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/twitter.svg#twitter-icon" />
+                      </svg>
+                      <a href="https://www.facebook.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/facebook.svg#facebook-icon-icon" />
+                      </svg>
+                      <a href="https://www.instagram.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/instagram.svg#twitter-icon" />
+                      </svg>
                     </div>
                   </div>
                 </div>
-                <p class="about-name">John Handson</p>
-                <p class="about-position">Lead designer</p>
+                <p class="about__name">John Handson</p>
+                <p class="about__position">Lead designer</p>
               </div>
-              <div class="about-card-item">
-                <div class="about-image-wrap">
-                  <img
-                    src="./images/specialist-1.png"
-                    alt="Alex Cutter"
-                    class="about-image"
-                  />
-                </div>
-                <p class="about-name">Alex Cutter</p>
-                <p class="about-position">Developer</p>
-              </div>
-              <div class="about-card-item">
-                <div class="about-image-wrap">
-                  <img
-                    src="./images/specialist-2.png"
-                    alt="Elena Simpson"
-                    class="about-image"
-                  />
-                  <div class="about-overlay">
-                    <div class="about-social-icons">
-                      <a
-                        href="https://twitter.com/?lang=en"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use xlink:href="./images/sprite.svg#twitter-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.facebook.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use xlink:href="./images/sprite.svg#facebook-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.instagram.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use
-                            xlink:href="./images/sprite.svg#instagram-icon"
-                          />
-                        </svg>
-                      </a>
+              <div class="about__card-item">
+                <div class="about__image-wrap">
+                  <img src="./images/specialist-1.png" alt="Alex Cutter" class="about__image" />
+                  <div class="about__overlay">
+                    <div class="about__social-icons">
+                      <a href="https://twitter.com/?lang=en"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/twitter.svg#twitter-icon" />
+                      </svg>
+                      <a href="https://www.facebook.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/facebook.svg#facebook-icon-icon" />
+                      </svg>
+                      <a href="https://www.instagram.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/instagram.svg#twitter-icon" />
+                      </svg>
                     </div>
                   </div>
                 </div>
-                <p class="about-name">Elena Simpson</p>
-                <p class="about-position">Artist</p>
+                <p class="about__name">Alex Cutter</p>
+                <p class="about__position">Developer</p>
               </div>
-              <div class="about-card-item">
-                <div class="about-image-wrap">
-                  <img
-                    src="./images/specialist-3.png"
-                    alt="Lily Allen"
-                    class="about-image"
-                  />
-                  <div class="about-overlay">
-                    <div class="about-social-icons">
-                      <a
-                        href="https://twitter.com/?lang=en"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use xlink:href="./images/sprite.svg#twitter-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.facebook.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use xlink:href="./images/sprite.svg#facebook-icon" />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://www.instagram.com"
-                        target="_blank"
-                        class="about-social-link"
-                      >
-                        <svg class="icon about-icon">
-                          <use
-                            xlink:href="./images/sprite.svg#instagram-icon"
-                          />
-                        </svg>
-                      </a>
+              <div class="about__card-item">
+                <div class="about__image-wrap">
+                  <img src="./images/specialist-2.png" alt="Elena Simpson" class="about__image" />
+                  <div class="about__overlay">
+                    <div class="about__social-icons">
+                      <a href="https://twitter.com/?lang=en"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/twitter.svg#twitter-icon" />
+                      </svg>
+                      <a href="https://www.facebook.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/facebook.svg#facebook-icon-icon" />
+                      </svg>
+                      <a href="https://www.instagram.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/instagram.svg#twitter-icon" />
+                      </svg>
                     </div>
                   </div>
                 </div>
-                <p class="about-name">Lily Allen</p>
-                <p class="about-position">Graphic Designer</p>
+                <p class="about__name">Elena Simpson</p>
+                <p class="about__position">Artist</p>
+              </div>
+              <div class="about__card-item">
+                <div class="about__image-wrap">
+                  <img src="./images/specialist-3.png" alt="Lily Allen" class="about__image"/>
+                  <div class="about__overlay">
+                    <div class="about__social-icons">
+                      <a href="https://twitter.com/?lang=en"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/twitter.svg#twitter-icon" />
+                      </svg>
+                      <a href="https://www.facebook.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/facebook.svg#facebook-icon-icon" />
+                      </svg>
+                      <a href="https://www.instagram.com"target="_blank"class="about__social-link"></a>
+                      <svg class="icon about__icon">
+                        <image xlink:href="./images/instagram.svg" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p class="about__name">Lily Allen</p>
+                <p class="about__position">Graphic Designer</p>
               </div>
             </div>
           </div>
+            <!-- About Cards end -->
         </section>
       </main>
-
+      <!-- Footer start -->
       <footer class="footer">
-        <div class="content-wrapper">
-          <div class="logo footer-logo">
-            <a href="#" class="logo-link">
-              <svg class="logo-image">
-                <image xlink:href="./images/logo.svg#logo-icon" />
+        <div class="content-wrapper footer__inner">
+          <div class="logo footer__logo">
+            <a href="#" class="logo__link">
+              <svg class="logo__image">
+                <image xlink:href="./images/footer-logo.svg" />
               </svg>
             </a>
           </div>
-          <nav class="nav footer-nav">
-            <ul class="nav-list">
-              <li class="nav-list-item footer-list-item">
-                <a href="#" class="nav-link">Home</a>
+          <nav class="nav footer__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item footer__list-item--small-font">
+                <a href="#" class="footer__nav-link">Home</a>
               </li>
-              <li class="nav-list-item footer-list-item">
-                <a href="#" class="nav-link">Services</a>
+              <li class="nav__list__item footer__list-item--small-font">
               </li>
-              <li class="nav-list-item footer-list-item">
-                <a href="#" class="nav-link">About</a>
+              <li class="nav__list-item footer__list-item--small-font">
+                <a href="#" class="footer__nav-link">Services</a>
               </li>
-              <li class="nav-list-item footer-list-item">
-                <a href="#" class="nav-link--active">Contacts</a>
+              <li class="nav__list-item footer__list-item--small-font">
+                <a href="#" class="footer__nav-link">About</a>
+              </li>
+              <li class="nav__list-item footer__list-item--small-font">
+                <a href="#" class="footer__nav-link footer__nav-link--active">Contacts</a>
               </li>
             </ul>
           </nav>
-          <div class="footer-icons">
+          <div class="footer__icons">
             <a
               href="https://twitter.com/?lang=en"
               target="_blank"
               title="Twitter"
-              class="footer-social-link"
+              class="footer__social-link"
             >
-              <svg class="icon footer-icon">
+              <svg class="icon footer__icon">
                 <image xlink:href="./images/footer-twitter.svg#twitter-icon" />
               </svg>
             </a>
@@ -238,19 +192,19 @@
               href="https://www.facebook.com"
               target="_blank"
               title="Facebook"
-              class="footer-social-link"
+              class="footer__social-link"
             >
-              <svg class="icon footer-icon">
-                <image xlink:href="./images/footer-facebook.svg#facebook-icon" />
+              <svg class="icon footer__icon">
+                <image xlink:href="./images/footer-facebook.svg" />
               </svg>
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               title="Instagram"
-              class="footer-social-link"
+              class="footer__social-link"
             >
-              <svg class="icon footer-icon footer-icon--reverse">
+              <svg class="icon footer__icon footer__icon--reverse">
                 <image xlink:href="./images/footer-instagram.svg#instagram-icon" />
               </svg>
             </a>
@@ -258,9 +212,9 @@
               href="https://www.linkedin.com/"
               target="_blank"
               title="LinkedIn"
-              class="footer-social-link"
+              class="footer__social-link"
             >
-              <svg class="icon footer-icon">
+              <svg class="icon footer__icon">
                 <image xlink:href="./images/footer-linkedin.svg#linkedin-icon" />
               </svg>
             </a>
@@ -268,15 +222,16 @@
               href="https://desktop.telegram.org/?setln=en"
               target="_blank"
               title="Telegram"
-              class="footer-social-link"
+              class="footer__social-link"
             >
-              <svg class="icon footer-icon">
-                <image xlink:href="./images/footer-telegram.svg#telegram-icon" />
+              <svg class="icon footer__icon">
+                <image xlink:href="./images/footer-telegram.svg" />
               </svg>
             </a>
           </div>
         </div>
       </footer>
+      <!-- Footer end -->
     </div>
   </body>
 </html>
