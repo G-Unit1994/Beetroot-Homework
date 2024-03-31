@@ -1,0 +1,318 @@
+/* Body start */
+body {
+    font-family: "Roboto";
+}
+/* Body end */
+
+.main {
+    margin-bottom: 120px;
+    padding:  0 15px;
+}
+
+.architectural__heading {
+    font-family: "Delius Unicase";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45.07px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 120px;
+}
+
+/* Section start */
+
+.section {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "first second second" "third third fourth" "fivth six six";
+}
+
+.section__element {
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .section__element:hover {
+    box-shadow: 0px 0px 30px 0px #00000080;
+  }
+
+  .section__element:hover .architectural__image {
+    scale: 1.15;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .section__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      360deg,
+      #241f24 0%,
+      rgba(91, 91, 91, 0.447552) 34.11%,
+      rgba(187, 186, 192, 0.26) 62.5%
+    );
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .arhitectural__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .section__overlay-icons, .section__overlay-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__overlay-icons {
+    opacity: 0;
+}
+
+.section__overlay:hover {
+    background: linear-gradient(
+      360deg,
+      #241f24 1.04%,
+      rgba(91, 91, 91, 0.26) 6.99%,
+      rgba(187, 186, 192, 0) 12.29%
+    );
+}
+
+.section__overlay:hover .section__overlay-icons {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+  }
+
+  .section__svg-icon {
+    width: 20px;
+    height: 20px;
+    fill: #4f4f4f;
+    border-radius: 8px;
+    background-color: #e0e0e080;
+    padding: 10px;
+  }
+
+  .section__svg-icon:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+
+  .section__author-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 15px;
+  }
+/* Section end */
+
+/* Arhitectural Photography start */
+
+.section__arhitectural-photography-element:nth-child(1) {
+    grid-area: first;
+}
+.section__arhitectural-photography-element:nth-child(2) {
+    grid-area: second;
+}
+.section__arhitectural-photography-element:nth-child(3) {
+    grid-area: third
+}
+.section__arhitectural-photography-element:nth-child(4) {
+    grid-area: fourth;
+}
+.section__arhitectural-photography-element:nth-child(5) {
+    grid-area: fivth
+}
+.section__arhitectural-photography-element:nth-child(6) {
+    grid-area: six;
+}
+/* Arhitectural Photography end */
+
+/* Still Life Photography start */
+.life__heading {
+    font-family: "Delius Unicase";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45.07px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 120px;
+  }
+
+  .section__still-life-photography {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "first second second" "third third fourth" "fifth fifth sixth";
+  }
+
+  .section__still-life-photography-element:nth-child(1) {
+    background: url("../images/still-life-photography/waterfall.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 16;
+    grid-area: first;
+  }
+
+  .section__still-life-photography-element:nth-child(2) {
+    background: url("../images/still-life-photography/sea.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 7.7;
+    grid-area: second;
+  }
+
+  .section__still-life-photography-element:nth-child(3) {
+    background: url("../images/still-life-photography/rocks.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 16;
+    grid-area: third;
+  }
+
+
+  .section__still-life-photography-element:nth-child(4) {
+    background: url("../images/still-life-photography/river.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 32;
+    grid-area: fourth;
+  }
+
+  .section__still-life-photography-element:nth-child(5) {
+    background: url("../images/still-life-photography/grove.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 7.7;
+    grid-area: fifth;
+  }
+
+  .section__still-life-photography-element:nth-child(6) {
+    background: url("../images/still-life-photography/man-on-tree.png") no-repeat top center / cover;
+    background-size: 100%;
+    aspect-ratio: 16 / 16;
+    grid-area: sixth;
+  }
+
+  .section__still-life-photography-element:hover {
+    background-size: 115%;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+/* Still Life Photography end */
+
+/* Portrait And Fashion Photography start */
+.section__portrait-fashion__heading {
+  font-family: "Delius Unicase";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45.07px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 120px;
+}
+
+.section__portrait-fashion {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "first second third" "fourth second fifth" "sixth seventh fifth" "sixth eighth eighth" "ninth ninth tenth";
+}
+
+.section__portrait-fashion-photography-element:nth-child(1) {
+  background: url("../images/portrait-and-fashion-photography/fashion-mode.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 16;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.section__portrait-fashion-photography-element:nth-child(2) {
+  background: url("../images/portrait-and-fashion-photography/fashion.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 33.3;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.section__portrait-fashion-photography-element:nth-child(3) {
+  background: url("../images/portrait-and-fashion-photography/stylist.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 16;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.section__portrait-fashion-photography-element:nth-child(4) {
+  background: url("../images/portrait-and-fashion-photography/designer.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 16;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.section__portrait-fashion-photography-element:nth-child(5) {
+  background: url("../images/portrait-and-fashion-photography/bloger.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 33.3;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
+.section__portrait-fashion-photography-element:nth-child(6) {
+  background: url("../images/portrait-and-fashion-photography/journalist.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 33.3;
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.section__portrait-fashion-photography-element:nth-child(7) {
+  background: url("../images/portrait-and-fashion-photography/traveler.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 16;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.section__portrait-fashion-photography-element:nth-child(8) {
+  background: url("../images/portrait-and-fashion-photography/friendship.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 7.69;
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.section__portrait-fashion-photography-element:nth-child(9) {
+  background: url("../images/portrait-and-fashion-photography/musician.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 7.69;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+
+.section__portrait-fashion-photography-element:nth-child(10) {
+  background: url("../images/portrait-and-fashion-photography/romance.png") no-repeat top center / cover;
+  background-size: 100%;
+  aspect-ratio: 16 / 16;
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.section__portrait-fashion-photography-element:hover {
+  background-size: 115%;
+  transition: background-size 0.5s ease-in-out;
+}
+/* /* Portrait And Fashion Photography start end */
