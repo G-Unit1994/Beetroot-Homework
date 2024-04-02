@@ -1,0 +1,207 @@
+html {
+    font-size: 16px;
+}
+
+/* Body start */
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    font-size: 1.75rem;
+    color: #000000;
+    background-color: white;
+}
+/* Body end */
+.documentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Documentation header start */
+.documentation__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    padding: 13px 0;
+    z-index: 10;
+  }
+
+  .documentation__header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .documentation__header-toolbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .documentation__header__switch-lang-btn {
+    font-family: "Tourney", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    display: block;
+    height: 40px;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: left;
+    border: none;
+    padding: 0 3px;
+    margin-right: 49px;
+    margin-bottom: 1px;
+  }
+
+  .documentation__header-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+
+  .documentation__header-list-item {
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+
+  .documentation__header-list-item:first-child::after {
+    content: "\002F";
+    color: inherit;
+    margin: 0 10px 0 7px;
+  }
+
+  .documentation__header-list-link {
+    text-decoration: none;
+  }
+/* Documentation header end */
+
+/* Main start */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+/* Main end */
+
+/* Socials section start */
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials__title {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    padding-left: 120px;
+    margin-top: 70px;
+    margin-bottom: 26px;
+}
+
+.socials__title::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    height: 8px;
+    background: #000000;
+}
+
+.socials__horizontal-line {
+    border: none;
+    border-top: 1px solid #bfbfbf;
+    width: 100%;
+}
+
+.socials__block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-auto-rows: minmax(180px, 1fr);
+    gap: 25px;
+    width: 100%;
+    gap: 30px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+
+.socials__social-flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.socials__social-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.socials__social-flip-card:hover .socials__social-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.socials__social-flip-front, .socials__social-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+
+.socials__social-flip-front {
+    background: #e6e6e6;
+}
+
+.socials__social-flip-back {
+    background: #1a1a1a;
+    transform: rotateY(180deg);
+}
+
+.socials__social-img {
+    display: block;
+}
+
+.socials__social-img--top {
+    transform: translateY(7px);
+}
+/* Socials section end */
+
+/* Links start */
+a {
+    color: inherit;
+    outline: none;
+  }
+  
+  a:active, a:focus, a:visited {
+    outline: none;
+  }
+/* Links end */
