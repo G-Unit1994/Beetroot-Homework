@@ -1,0 +1,188 @@
+html {
+    font-size: 16px;
+}
+
+/* Body start */
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    font-size: 1.75rem;
+    color: #000000;
+    background-color: white;
+}
+/* Body end */
+
+.documentation {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Documentation Header start */
+.documentation__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 13px 0;
+    margin-bottom: 71px;
+}
+
+.documentation__header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documentation__header-toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.documentation__header-switch-lang-btn {
+    font-family: "Tourney", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    display: block;
+    height: 40px;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: left;
+    border: none;
+    padding: 0 3px;
+    margin-right: 49px;
+    margin-bottom: 1px;
+}
+
+.documentation__header-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.documentation__header-list-item {
+    font-family: "Staatliches", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.documentation__header-list-item:first-child::after {
+    content: "\002F";
+    color: inherit;
+    margin: 0 10px 0 7px;
+}
+
+.documentation__header-list-link {
+    text-decoration: none;
+}
+/* Documentation Header end */
+
+/* Main start */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.article__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.article {
+    margin-bottom: 31px;
+}
+
+ .article__title {
+    font-family: "Francois One", sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  } 
+  .article__chapter {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    font-family: "Farro-Light", sans-serif;
+    font-size: 1.14rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    vertical-align: top;
+}
+
+.article__paragraph,
+.article__item {
+  margin-bottom: 29px;
+}
+
+.article__paragraph--mrg {
+    margin-top: 41px;
+    margin-bottom: 38px;
+}
+
+.article__list {
+    padding-top: 2px;
+  }
+
+  .article__name {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  .article__code {
+    background-color: #d3d3d3;
+    padding: 4px 2px 6px 0;
+  }
+
+  .emphasize {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+  }
+
+  .img__emodji {
+    display: inline-block;
+    width: 28px;
+    height: 30px;
+    position: relative;
+    top: -4px;
+  }
+
+  a {
+    color: inherit;
+    outline: none;
+  }
+  
+  a:active,
+  a:focus,
+  a:visited {
+    outline: none;
+  }
+/* Main end */
