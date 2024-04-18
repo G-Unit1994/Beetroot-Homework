@@ -1,0 +1,19 @@
+@use "colors" as *;
+
+$min-content-vh: calc(100vh - 100px);
+$min-tablet-content-vh: calc(100vh - 60px);
+
+$min-content-width: 320px;
+$max-width: 1238;
+
+$full-width: 100%;
+
+$default-fs: 16px;
+$fs-normal: normal;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$burger-menu-line: 2px solid $black-color;

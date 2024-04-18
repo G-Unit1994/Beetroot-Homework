@@ -1,0 +1,58 @@
+@use "../customs" as *;
+@use "../base/generals" as *;
+
+.hero {
+  @include flex(column, center);
+  position: relative;
+  width: $full-width;
+  max-height: 600px;
+  aspect-ratio: 16 / 9;
+  background: url(./../public/images/desktop/hero.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  // media
+  @include for-tablet-landscape-down {
+    width: $full-width;
+    aspect-ratio: 21.6 / 9;
+    background: url(./../public/images/tablet/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @include for-phone-only {
+    width: $full-width;
+    background: url(./../public/images/phone/hero_image.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 9 / 14.05;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+
+    // media
+    @include for-tablet-landscape-down {
+      padding-top: 30px;
+    }
+    @include for-phone-only {
+      padding-top: 70px;
+    }
+  }
+
+  &__heading {
+    @include font-heading1-semibold;
+    @include responsive-font(30, 48);
+
+    // media
+    @include for-phone-only {
+      margin-bottom: -3px;
+      line-height: 1.7;
+    }
+  }
+}
