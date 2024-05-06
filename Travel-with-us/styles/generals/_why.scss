@@ -1,0 +1,206 @@
+@import "../generals/generals";
+
+.choose {
+     width: 100vw;
+    background-image: url("../../images/FullHd/WhyBackground-full.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet-portrait {
+        height: 659px;
+    }
+
+    @include mobile-portrait {
+        height: 630px;
+    }
+
+    @include background(
+        url("../../images/Hd/WhyBackground-hd.avif"),
+        url("../../images/Xga/WhyBackground-xga.avif"),
+        url("../../images/Tablet/WhyBackground-tablet.avif"),
+        url("../../images/mobile/WhyBackground-mobile.avif")
+    );
+
+    @include flexy (flex,center,center,row)
+}
+
+.choose__wrapper {
+    gap: 136px;
+    height: 704px;
+    width: 68.75%;
+    margin: 0 auto;
+
+    @include desctop_hd-portrait {
+        width: 83.824%;
+    }
+
+    @include desctop_xga-portrait {
+        gap: 24px;
+        width: 93.842%;
+    }
+
+    @include tablet-portrait {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    @include flexy (flex,flex-start,center,row)
+}
+
+
+
+.choose__info {
+    width: 648px;
+
+    &__btn {
+        margin-bottom: 5px;
+        position: relative;
+        & button {
+            cursor: pointer;
+            position: relative;
+            text-transform: uppercase;
+            padding: 20px 32px;
+            border: none;
+            outline: none;
+            color: white;
+            @extend %properties__for__btn-main;
+            background-repeat: no-repeat;
+            background-image: url("../../images/btn/back-btn.png");
+            background-color: #5373FD;
+            transition: .3s ease;
+            
+            &:hover {
+                border-radius: 10px;
+                color: rgb(4, 193, 48);
+                background-repeat: no-repeat;
+            }
+            
+        }
+
+        @include desctop_xga-portrait {
+            margin: 0;
+        }
+    }
+
+    @include desctop_hd-portrait {
+        width: 48.979%;;
+    }
+
+    @include desctop_xga-portrait {
+        width: 57.34%;
+    }
+
+    @include tablet-portrait {
+        margin-bottom: 86px;
+        align-items: center;
+        width: 100.04%;
+    }
+
+    @include mobile-portrait {
+        margin-bottom: 99px
+    }
+
+    @include flexy (flex,center,flex-start,column);
+}
+
+.choose__description {
+    padding: 0 0 31px 0;
+    &__title {
+        margin: 0 0 28px 0;
+        color: white;
+        @extend %h2__title;
+
+        @include desctop_hd-portrait {
+            margin: 0 0 25px 0;
+        }
+
+        @include tablet-portrait {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        color: white;
+        margin: 0;
+        @extend %text__properties;
+
+        @include tablet-portrait {
+            text-align: center;
+        }
+    }
+
+    &__description:nth-child(2) {
+        margin: 0 0 0 0;
+    }
+    
+    &__description:nth-child(3) {
+        margin: 0 0 0 0;
+        padding: 27px 0 0 0;
+
+        @include tablet-portrait {
+            margin: 0 0 24px 0;
+        }
+    }
+    
+    @include desctop_hd-portrait {
+        padding: 0 0 35px;
+    }
+
+    @include desctop_xga-portrait {
+        padding: 0 0 36px 0;
+    }
+    @include tablet-portrait {
+        padding-bottom: 0;
+    }
+}
+
+.choose__img {
+    width: 32.122%;
+    padding: 10px 0 0 0 ;
+
+    &__image {
+
+        & img {
+            width: inherit;
+            height: inherit;
+        }
+
+        @include desctop_xga-portrait {
+            width: 94.971%;
+        } 
+
+        @include tablet-portrait {
+        }
+    }
+
+    &__image:nth-child(2) {
+        align-self: flex-end;
+        margin-top: 10px;
+        & img {
+            @include desctop_xga-portrait {
+                margin: 0 0 0 14px;
+            }
+        }  
+
+        @include tablet-portrait {
+            margin-top: 0;
+        }
+    }
+
+    @include desctop_hd-portrait {
+        width: 40.96%;
+    }
+
+    @include desctop_xga-portrait {
+        width: 60.34%;
+        width: 40.34%;
+    }
+
+    @include tablet-portrait {
+        flex-direction: row;
+        width: 100.034%;
+        margin-bottom: 8px;
+    }
+
+    @include flexy(flex,center,flex-start,column);
+}

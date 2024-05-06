@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Aleo";
+    src: url("../../fonts/aleoregular.woff2");
+}
+
+@font-face {
+    font-family: Josefin Bold;
+    src: url("../../fonts/JosefinSans-Bold.woff2");
+}
+
+@font-face {
+    font-family: Josefin Light;
+    src: url("../../fonts/JosefinSans-Light.woff2");
+}
+
+@font-face {
+    font-family: "Josefin Regular";
+    src: url("../../fonts/JosefinSans-Regular.woff2");
+}
+
+// Mixin start
+@mixin desctop-xl-portrait {
+    @media (min-width: 1900px) {
+        @content
+    }
+};
+
+@mixin desctop_fullhd-portrait {
+    @media (max-width: 1920px) {
+        @content
+    }
+};
+
+@mixin desctop_hd-portrait {
+    @media (max-width: 1360px) {
+        @content
+    }
+};
+
+@mixin desctop_xga-portrait {
+    @media (max-width: 1024px) {
+        @content
+    }
+};
+
+@mixin tablet_x-portrait {
+    @media (max-width: 900px) {
+        @content
+    }
+};
+
+@mixin tablet-portrait {
+    @media (max-width: 768px) {
+        @content
+    }
+};
+
+@mixin mobile_l-portrait {
+    @media (max-width: 685px) {
+        @content
+    }
+};
+
+@mixin mobile-portrait {
+    @media (max-width: 576px) {
+        @content
+    }
+};
+
+@mixin mobile_m-portrait {
+    @media (max-width: 435px) {
+        @content
+    }
+};
+
+@mixin mobile_s-portrait {
+    @media (max-width: 400px) {
+        @content
+    }
+};
+
+@mixin flexy($display,$justify,$align,$direction) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+};
+
+@mixin background($hd,$xga,$tablet,$mobile) {
+    @include desctop_hd-portrait {
+        background-image: $hd;
+    }
+
+    @include desctop_xga-portrait {
+        background-image: $xga;
+    }
+
+    @include tablet-portrait {
+        background-image: $tablet;
+    }
+
+    @include mobile-portrait {
+        background-image: $mobile;
+    }
+};
+// Mixin end
+
+// Styles start
+&h1__title {
+    font-family: Josefin Light;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+}
+
+&subtitle__h1 {
+    font-family: Josefin Light;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.33em;
+}
+
+%text-input__properties {
+    font-family: "Aleo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.15em;
+}
+
+%text-link__navigation {
+    font-family: "Aleo";
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.17px;
+}
+
+%scroll__text {
+    font-family: "Josefin Light";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+%text__properties {
+    font-family: "Josefin Light";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    letter-spacing: 1.64px;
+}
+
+%h2__title {
+    font-family: "Aleo";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+%properties__for__btn-main {
+    font-family: "Aleo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+}
+
+%h6__subtitle {
+    font-family: "Josefin Light";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+}
+
+%h5__title {
+    font-family: "Josefin Light";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+}
+// Styles end
