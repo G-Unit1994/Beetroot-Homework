@@ -1,5 +1,3 @@
- 
-
 //  1) Функціональний вираз:
 const funcExpr = function() {
     console.log("Функціональний вираз");
