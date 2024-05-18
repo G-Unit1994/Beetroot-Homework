@@ -57,7 +57,7 @@ function factorialnumber(n) {
 
 // Приклад використання функції та виведення результату через alert
 let number = 5;
-let factorialresult = factorialnumber(number);
+let result = factorialnumber(number);
 console.log("Факторіал числа " + number + " дорівнює " + result);
 
 //  Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число.
