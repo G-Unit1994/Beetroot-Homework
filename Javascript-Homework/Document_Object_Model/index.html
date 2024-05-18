@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./scss/styles.css">
+
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Нумерований список пісень</h1>
+    <ol id="playlist"></ol>
+
+    <!-- Modal start -->
+    <div id="modal">
+        <div class="modal__content">
+            <h2>Modal</h2>
+            <button  class="modal__button" id="close">Close</button>
+        </div>
+    </div>
+    <button class="modal__button" id="open">Display</button>
+    <!-- Modal end -->
+
+    <!-- Traffic light start -->
+    <div class="traffic__light">
+        <div id="redLight" class="light red"></div>
+        <div id="yellowLight" class="light"></div>
+        <div id="greenLight" class="light"></div>
+    </div>
+    <button id="changeLightButton">Змінити колір</button>
+    <!-- Traffic light end -->
+
+    <script src="./Js/rock.js"></script>
+    <script type="module"  src="./Js/modal.js"></script>
+    <script src="./Js/traffic_light_start.js"></script>
+</body>
+</html>
