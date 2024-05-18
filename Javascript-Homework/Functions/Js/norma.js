@@ -20,7 +20,7 @@ console.log(num2 + " є досконалим числом:", isPerfectNumber(num
 console.log(num3 + " є досконалим числом:", isPerfectNumber(num3));
 
 // 2) Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
-function isPerfectNumber(number) {
+function isAcceptNumber(number) {
     let sumOfDivisors = 0;
 
     for(let i = 1; i < number; i++) {
