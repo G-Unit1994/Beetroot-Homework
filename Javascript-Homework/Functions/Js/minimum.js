@@ -5,6 +5,9 @@ const funcExpr = function() {
     console.log("Функціональний вираз");
 };
 
+// Виклик функції
+funcExpr();
+
 // B):
 function funcDecl() {
     console.log("Оголошення функції");
