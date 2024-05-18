@@ -1,7 +1,7 @@
  
 
 //  1) Функціональний вираз:
-function funcExpr = function() {
+const funcExpr = function() {
     console.log("Функціональний вираз");
 };
 
