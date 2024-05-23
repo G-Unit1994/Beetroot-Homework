@@ -33,6 +33,12 @@ var playList = [
     }
     ];
 
-    playList.forEach(function(song, index) {
-        console.log((index + 1) + '. ' + song.author + ' - ' + song.song);
-    });
+// Отримання контейнера для списку
+        var playlistContainer = document.getElementById('playlist');
+
+        // Додавання пісень до списку
+        playList.forEach(function(song, index) {
+            var listItem = document.createElement('li');
+            listItem.textContent = (index + 1) + '. ' + song.author + ' - ' + song.song;
+            playlistContainer.appendChild(listItem);
+        });
