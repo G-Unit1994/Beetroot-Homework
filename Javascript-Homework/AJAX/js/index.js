@@ -17,7 +17,7 @@ searchForm.addEventListener('submit', async function(event) {
 });
 
 async function fetchMovies(query, type, page) {
-    const response = await fetch(`http://www.omdbapi.com/?s=${query}&type=${type}&page=${page}&apikey=${apiKey}`);
+    const response = await fetch(`https://www.omdbapi.com/?s=${query}&type=${type}&page=${page}&apikey=${apiKey}`);
     const data = await response.json();
 
     resultsContainer.innerHTML = '';
@@ -55,7 +55,7 @@ function createPagination(totalPages) {
 }
 
 async function fetchMovieDetails(id) {
-    const response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
+    const response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`);
     const data = await response.json();
 
     detailsContainer.innerHTML = `
