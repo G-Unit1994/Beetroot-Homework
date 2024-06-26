@@ -1,0 +1,74 @@
+.footer {
+	background: $brown-dark;
+
+	.container {
+		display: flex;
+		padding-top: 70px;
+	}
+
+	&__left {
+		flex: 1 0 70%;
+	}
+
+	&__right {
+		flex: 1 0 30%;
+	}
+
+	&__logo {
+		width: 150px;
+		height: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__nav {
+		font-size: 20px;
+		line-height: 24.38px;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		a {
+			color: white;
+		}
+
+		ul li {
+			margin: 0 10px;
+		}
+	}
+
+	&__copyright {
+		color: white;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 20px;
+	}
+}
+
+.contact {
+	&__title {
+		color: white;
+		font-family: Montserrat;
+		font-size: 26px;
+		line-height: 31.69px;
+		text-align: left;
+		margin-bottom: 48px;
+	}
+
+	&__list {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 32px;
+	}
+
+	&__item svg {
+		width: 30px;
+		height: 30px;
+	}
+
+	a {
+		font-size: 26px;
+		line-height: 31.69px;
+		text-align: left;
+		color: white;
+	}
+}

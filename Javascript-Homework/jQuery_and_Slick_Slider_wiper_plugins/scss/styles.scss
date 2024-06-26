@@ -1,0 +1,25 @@
+$brown-light: #f8f1ea;
+$tomato-light: #f16a50;
+$tomato: #c62100;
+$arrow-inactive: #202020;
+$brown-dark: #35312d;
+$black: #000000;
+$dot-inactive: #f8f1eab2;
+$dot-interactive: #cac2ba;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./header";
+@import "./footer";
+@import "./sections/arrivals";
+@import "./sections/heroes";
+@import "./sections/partners";
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}

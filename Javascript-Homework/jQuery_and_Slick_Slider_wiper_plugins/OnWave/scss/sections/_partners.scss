@@ -1,0 +1,47 @@
+.partners {
+	background: $brown-light;
+	padding-bottom: 70px;
+
+	&__title {
+		@include section-title;
+		margin-bottom: 40px;
+		padding-top: 70px;
+	}
+
+	&__container {
+		position: relative;
+		padding: 0 50px;
+	}
+
+	&-slider {
+		&__item {
+			svg {
+				width: 100px;
+			}
+		}
+
+		&__prev {
+			position: absolute;
+			left: 0;
+			margin-top: -37px;
+			top: 50%;
+			height: 74px;
+			width: 40px;
+			background: url("/assets/images/prev.svg");
+		}
+
+		&__next {
+			position: absolute;
+			right: 0;
+			margin-top: -37px;
+			top: 50%;
+			height: 74px;
+			width: 40px;
+			background: url("/assets/images/next.svg");
+
+			&:active {
+				background: url("/assets/images/next_active.svg");
+			}
+		}
+	}
+}
