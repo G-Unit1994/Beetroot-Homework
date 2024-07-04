@@ -1,0 +1,7 @@
+@use "./generals" as *;
+
+@for $i from 1 through $cards {
+    .play__cards-flip-card-item:nth-of-type(#{$i}) > .play__cards-flip-inner {
+        animation-delay: random() + s;
+    }
+}

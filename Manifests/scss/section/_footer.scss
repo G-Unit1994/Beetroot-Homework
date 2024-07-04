@@ -1,0 +1,7 @@
+.footer {
+    @include flex(column, center);
+    @extend %full-width;
+    background: $footer-bg-color;
+    padding-top: 69px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,42 @@
+@use "../customs" as *;
+@use "../base/generals" as *;
+
+.button {
+  @include font-category-regular;
+  display: inline;
+  width: 180px;
+  height: 45px;
+  text-transform: capitalize;
+  text-align: center;
+  color: $white-color;
+  background: $main-text-color;
+  outline: none;
+  border: none;
+  padding-inline: 0px;
+  padding-block: 0px;
+
+  &:hover {
+    @include transition(background 0.5s ease-in-out);
+    background: $button-hover-color;
+  }
+}
+
+.button--transparent {
+  width: auto;
+  height: auto;
+  color: $placeholder-color;
+  background-color: transparent;
+  padding: 0;
+
+  &:hover {
+    @include transition(background 0.5s ease-in-out);
+    fill: $black-color;
+    color: $black-color;
+    background: none;
+  }
+
+  &:hover .arrow-icon {
+    @include transition(background 0.5s ease-in-out);
+    fill: $black-color;
+  }
+}

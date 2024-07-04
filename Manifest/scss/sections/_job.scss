@@ -1,0 +1,98 @@
+@use "../customs" as *;
+@use "../base/generals" as *;
+
+.vacancies {
+  @include flex(column, center);
+  @extend %full-width;
+  margin-bottom: 90px;
+
+  // media
+  @include for-tablet-landscape-down {
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    @include flex($justification: space-between);
+    @extend %full-width;
+
+    // media
+    @include for-tablet-landscape-down {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list-wrap {
+    @include flex(column, $alignment: flex-start);
+    padding-right: 10px;
+    margin-bottom: 35px;
+
+    @include for-tablet-landscape-down {
+      flex-basis: 100%;
+      padding-right: 0;
+      margin-bottom: 42px;
+    }
+
+    @include for-phone-only {
+      margin-bottom: 23px;
+    }
+
+    .button {
+      transform: translateY(6px);
+
+      @include for-phone-only {
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  &__list-link {
+    @include font-title-regular;
+
+    @include for-phone-only {
+      @include font-popular-title-regular;
+    }
+  }
+
+  &__description {
+    @include flex(column);
+    padding-left: 10px;
+
+    @include for-tablet-landscape-down {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+
+    @include for-phone-only {
+      @include flex(column);
+    }
+  }
+
+  &__paragraph {
+    @include font-vacancies-paragraph-regular;
+    max-width: 470px;
+
+    &:first-child {
+      margin-bottom: 33px;
+
+      // media
+      @include for-tablet-landscape-down {
+        margin-bottom: 21px;
+      }
+      @include for-phone-only {
+        margin-bottom: 21px;
+      }
+    }
+
+    // media
+    @include for-tablet-landscape-down {
+      max-width: 626px;
+      text-align: right;
+    }
+    @include for-phone-only {
+      @include font-vacancies-paragraph-regular-small-f;
+      text-align: left;
+      // @include responsive-font(18, 19);
+    }
+  }
+}

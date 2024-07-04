@@ -1,0 +1,58 @@
+@use "../customs" as *;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: $default-fs;
+  // font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  @include fonts();
+  background: $white-color;
+  min-height: $min-content-vh;
+}
+
+.container {
+  @extend %full-width;
+  max-width: 1238px;
+  padding: 0 34px;
+  box-sizing: border-box;
+
+  @include for-phone-only {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: $black-color;
+  outline: none;
+}
+
+img {
+  @include responsive-image;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url(./../public/svg/cursor.svg), auto;
+}

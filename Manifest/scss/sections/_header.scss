@@ -1,0 +1,248 @@
+@use "../customs" as *;
+@use "../base/generals" as *;
+
+.header {
+  @include flex(column, center);
+  @extend %full-width;
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 36px;
+
+  // media
+  @include for-tablet-landscape-down {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &__logo-icon {
+    width: 142px;
+    height: 12px;
+
+    // media
+    @include for-tablet-landscape-down {
+      width: 145px;
+      height: 13px;
+    }
+  }
+
+  &__nav {
+    @include flex($alignment: center, $justification: space-between);
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__nav-list {
+    @include flex($alignment: center, $justification: flex-end);
+    @extend %full-width;
+    gap: 24px;
+
+    // media
+    @include for-tablet-landscape-down {
+      @include flex(column, center);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: $min-tablet-content-vh;
+      gap: 15px;
+      background: $button-hover-color;
+      padding: 50px 25px;
+      box-sizing: border-box;
+      z-index: 10;
+      opacity: 0;
+    }
+  }
+
+  &__list-item {
+    @include font-navigation-regular;
+  }
+
+  &__nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px 7px;
+
+    &:active::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: calc(50% - 21px);
+      height: 1px;
+      width: 40px;
+      background: $black-color;
+    }
+
+    //  media
+    @include for-tablet-landscape-down {
+      color: $white-color;
+      margin-bottom: 20px;
+
+      &:visited,
+      &:active {
+        color: $white-color;
+      }
+
+      &:active::after {
+        background: $white-color;
+      }
+    }
+  }
+
+  &__nav-bar {
+    @include flex($alignment: center);
+    margin-left: 85px;
+
+    @include for-tablet-landscape-down {
+      margin-left: 20px;
+      gap: 24px;
+    }
+
+    @include for-phone-only {
+      gap: 5px;
+    }
+  }
+
+  &__search-wrap {
+    @include flex($alignment: center);
+    position: relative;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+
+  &__input {
+    width: 0;
+    border: none;
+    border-bottom: 1px solid $black-color;
+    padding-right: 0;
+    padding-left: 0;
+    opacity: 0;
+
+    &::placeholder {
+      @include font-input-placeholder-regular;
+    }
+  }
+
+  &__search-btn {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    z-index: 1;
+
+    // media
+    @include for-tablet-landscape-down {
+      top: -1px;
+    }
+  }
+
+  &__search-lens {
+    width: 17px;
+    height: 16px;
+    fill: $black-color;
+
+    // media
+    @include for-tablet-landscape-down {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__burger {
+    padding: 15px 0 15px 15px;
+    display: none;
+
+    // media
+    @include for-tablet-landscape-down {
+      display: block;
+    }
+  }
+
+  &__burger-label {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 20px;
+
+    &:hover {
+      cursor: url(./../public/svg/cursor.svg), auto;
+    }
+  }
+
+  &__line {
+    display: block;
+
+    &,
+    &::before,
+    &::after {
+      width: $full-width;
+      height: 2px;
+      background: $black-color;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+    }
+
+    &::before {
+      top: 8px;
+    }
+
+    &::after {
+      bottom: 1px;
+    }
+  }
+
+  // --- Actions --- //
+
+  // show nav list
+  &__checkbox:checked ~ &__nav-list {
+    @include transition(all 0.5ms ease-in-out);
+    opacity: 1;
+  }
+
+  // hide hero text on nav list show
+  &:has(.header__checkbox:checked) + .main .hero__text {
+    @include transition(all 0.5ms ease-in-out);
+    opacity: 0;
+  }
+
+  // show input preview
+  &__search-btn:focus + &__input {
+    @include transition(opacity 0.5ms ease-in-out);
+    width: 178px;
+    padding-right: 25px;
+    opacity: 1;
+  }
+
+  // cross burger
+  &__checkbox:checked ~ &__nav-bar &__burger-label {
+    top: 8px;
+  }
+
+  &__checkbox:checked ~ &__nav-bar &__line {
+    transform: rotate(45deg) translate(-1px, 0);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      transform: rotate(-90deg) translate(-1px, 0);
+      transition-timing-function: ease;
+      transition-duration: 0.15s;
+      transition-property: transform;
+    }
+  }
+}

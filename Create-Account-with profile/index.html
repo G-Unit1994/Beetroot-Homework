@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Подключение Css -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet"  href="./css/main.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<title>Create account</title>
+</head>
+<body>
+	<div class="user"> 
+		<div class="container"> 
+		<!-- Create account start -->
+			<section class="create">
+				<div class="create__inner">
+					<h2 class="create__title">Create an Account</h2>
+					<form action="#" method="post" name="signup" class="create__form">
+						<div class="create__inputs-group-wrap">
+							<div class="create__input-wrap">
+								<label for="signin-first-name" class="create__label">First Name</label>
+								<input type="text" id="signin-first-name" name="signin-first-name"  class="create__input">
+							</div>
+							<div class="create__input-wrap">
+								<label for="signin-last-name" class="create__label">Last Name</label>
+								<input  type="text" id="signin-last-name" name="signin-last-name" class="create__input">
+							</div>
+						</div>
+						<div class="create__input-wrap">
+							<label for="signin-email" class="create__label">E-mail</label>
+             			    <input type="<email" id="signin-email" name="signin-email" class="create__input create__input--full-width">
+             			     <p class="create__text">We'll never share your email with anyone else.</p>
+						</div>
+						<div class="create__input-wrap">
+							<div class="create__radio-wrap">
+								 <input type="radio" id="male" name="signin-gender" value="male" class="create__radio-input">
+								  <label for="male" class="create__label create__radio-label">Male</label>
+								  <input type="radio" id="female" name="signin-gender" value="female" class="create__radio-input">
+								  <label for="female" class="create__label create__radio-label">Female</label>
+							</div>
+						</div>
+						<div class="create__inputs-group-wrap">
+							<div class="create__input-wrap">
+								 <label for="signin-select" class="create__label">Country</label>
+								  <select id="signin-select" name="signin-countries-list" class="create__input create__input--pdd-r create__select" required>
+								  	 <option value="" selected class="create__option">Select</option>
+								  	 <option value="ukraine" class="create__option">Ukraine</option>
+								  	 <option value="ukraine" class="create__option">Usa</option>
+								  	 <option value="ukraine" class="create__option">England</option>
+								  </select>
+							</div>
+							<div class="create__input-wrap">
+								<label for="signin-city" class="create__label">City</label>
+								<input type="text" id="signin-city" name="signin-city" class="create__input">
+							</div>
+						</div>
+						<button type="submit" id="signup-form" class="create__btn create__btn--full-width">Sign Up</button>
+					</form>
+					<div  class="create__details">
+						<p class="create__text create__text--center">By clicking the 'Sign Up' button, you confirm that you accept our</p>
+						<a href="#" class="create__link create__link--small-size create__terms-link">Terms of Use</a> and
+						<a href="#" class="create__link create__link--small-size create__terms-link">Privacy Policy</a>
+<!-- 						<hr class="create__horizontal-line">  -->						
+						<p class="create__login"> Have an account?
+							<a href="#" class="create__link create__link--big-size create__login-link">Log In</a>
+						</p>
+					</div>
+				</div>
+			</section>
+		<!-- Create account start -->
+
+		<!-- Profile start -->
+		<section class="profile"> 
+			<div class="profile__inner"> 
+				<h2 class="profile__title">Profile</h2>
+				<form  action="#" method="post" name="profile" class="profile__form" enctype="multipart/form-data">
+					<div class="create__profile">
+						<img src="./images/profile_photo.png" alt="profile-photo" class="create__profile-img">
+						<div class="profile__manage-img">
+							 <input type="file" name="upload-profile-photo" id="upload-photo" class="profile__load-input profile__input--small profile__input--pdd-r profile__upload-file">
+							 <button  type="button" class="button profile__load profile__input--small profile__delete-photo-btn"></button>
+							 <p class="profile__text">Up to 1 MB (300x300 px)</p>
+						</div>
+					</div>
+					<div class="profile__inputs-group-wrap">
+						<div class="profile__input-wrap">
+							 <label for="profile-name" class="profile__label">Name</label>
+							  <input type="text" id="profile-name" name="profile-name" class="profile__input">
+						</div>
+						<div class="profile__input-wrap">
+							 <label for="profile-email" class="profile__label">E-mail</label>
+                <input
+                  type="email"
+                  id="profile-email" name="profile-email" class="profile__input">
+						</div>
+					</div>
+					<div  class="profile__inputs-group-wrap">
+						<div class="profile__input-wrap">
+							 <label for="profile-select" class="profile__label">Country</label>
+							 <select id="profile-select" name="profile-countries-list" class="profile__input profile__input--pdd-r profile__select"required>
+							 	<option value="" selected class="profile__option">Select</option>
+							 	 <option value="ukraine" class="profile__option">Ukraine</option>
+							 	 <option value="usa" class="profile__option">Usa</option>
+							 	 <option value="england" class="profile__option">England</option>
+							 </select>
+						</div>
+						<div class="profile__input-wrap">
+							<label for="profile-city" class="profile__label">City</label>
+							 <input type="text" id="profile-city" name="profile-city" class="profile__input">
+						</div>
+					</div>
+					<div class="profile__inputs-group-wrap">
+						<div class="profile__input-wrap">
+							<label for="profile-zip-code" class="profile__label">Zip Code</label>
+							<input type="text" id="profile-zip-code" name="profile-zip-code" class="profile__input">
+						</div>
+						<div class="profile__input-wrap">
+							<label for="profile-tel" class="profile__label">Phone Number</label>
+							<input type="tel" id="profile-tel" name="profile-tel" class="profile__input">
+						</div>
+					</div>
+					<button type="submit" id="update-form" class="profile__btn">Update</button>
+				</form>
+			</div>
+		</section>
+		<!-- Profile end -->
+		</div>
+	</div>
+</body>
+</html>

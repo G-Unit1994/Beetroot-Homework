@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./css/styles.css">
+
+    <title>AJAX</title>
+</head>
+<body>
+    <div class="container">
+        <form class="search__form" id="searchForm">
+            <h1 class="search__title">Movie Search</h1>
+            <div class="form__group">
+                <label for="title">Movie Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form__group">
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div id="results" class="results"></div>
+        <div id="pagination" class="pagination"></div>
+        <div id="details" class="details"></div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

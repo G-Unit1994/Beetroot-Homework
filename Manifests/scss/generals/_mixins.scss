@@ -1,0 +1,78 @@
+@use "colors" as *;
+
+// function
+
+@function rem($size) {
+    @return $size / $default-fs * 1rem;
+  }
+  
+  // responsive-font
+
+@mixin responsive-font($min-size, $max-size) {
+    $adding-size: $max-size - $min-size;
+    $max-width: $max-width - 320;
+    font-size: calc(
+      #{$min-size + px} + #{$adding-size} *
+        ((100vw - #{$min-content-width}) / #{$max-width})
+    );
+  }
+
+  // centered-flex
+
+@mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $alignment;
+    justify-content: $justification;
+  }
+
+  // transition
+
+@mixin transition($params) {
+    transition: $params;
+  }
+  
+  // image
+  
+  @mixin responsive-image {
+    display: block;
+    // max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  
+  // fonts
+  
+  @mixin fonts(
+    $f-family: '"Lato", sans-serif',
+    $f-style: $fs-normal,
+    $f-weight: $fw-regular,
+    $f-size: 1rem,
+    $l-height: 1.66,
+    $l-spacing: normal,
+    $t-transform: none,
+    $color: $main-text-color
+  ) {
+    font-family: $f-family;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    font-size: $f-size;
+    line-height: $l-height;
+    letter-spacing: $l-spacing;
+    text-transform: $t-transform;
+    color: $color;
+  }
+  
+  // media
+  
+  @mixin for-tablet-landscape-down {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  
+  @mixin for-phone-only {
+    @media screen and (max-width: 599px) {
+      @content;
+    }
+  }

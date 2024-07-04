@@ -1,0 +1,71 @@
+.hero {
+    height: 600px;
+    &__background {
+        margin-left: -34px;
+        margin-right: -34px;
+        width: 100vw;
+        height: 600px;
+    }
+
+    &__title, &__subtitle {
+        font-family: "Red Hat Display";
+        font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+        display: block;
+        font-weight: 600;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+    }
+
+    &__text {
+        margin-top: -500px;
+    }
+}
+
+.hero__sec {
+    height: 100%;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 320px;
+
+        &__title, &__subtitle {
+            line-height: 50px;
+            letter-spacing: 0.05em;
+        }
+
+        &__background {
+            height: 320px;
+        }
+
+        &__text {
+            margin-top: -290px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        height: 500px;
+        &__background {
+            margin-left: -10px;
+            margin-right: -10px;
+            width: 100vw;
+            height: 500px;
+        }
+
+        &__title, &__subtitle {
+            letter-spacing: 0.05em;
+            text-align: left;
+        }
+
+        &__background {
+            height: 500px;
+        }
+
+        &__text {
+            padding-top: 70px;
+            margin-top: -500px;
+        }
+    }
+}

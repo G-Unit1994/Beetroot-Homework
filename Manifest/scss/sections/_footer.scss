@@ -1,0 +1,91 @@
+@use "../customs" as *;
+@use "../base/generals" as *;
+
+.footer {
+  @include flex(column, center);
+  @extend %full-width;
+  background: $footer-bg-color;
+  padding-top: 69px;
+  padding-bottom: 30px;
+
+  @include for-tablet-landscape-down {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__inner {
+    @include flex(column, center);
+  }
+
+  &__heading {
+    @include font-heading1-regular;
+    align-self: flex-start;
+    margin-bottom: 27px;
+
+    @include for-tablet-landscape-down {
+      align-self: center;
+      margin-bottom: 21px;
+    }
+
+    @include for-phone-only {
+      @include responsive-font(32, 48);
+    }
+  }
+
+  &__contacts {
+    @include flex($justification: space-between);
+    @extend %full-width;
+    margin-bottom: 12px;
+
+    @include for-tablet-landscape-down {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__contacts-item {
+    margin-bottom: 13px;
+
+    @include for-tablet-landscape-down {
+      text-align: center;
+    }
+
+    @include for-phone-only {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__contact-link {
+    @include font-contact-list-regular;
+
+    @include for-phone-only {
+      font-size: 18px;
+    }
+  }
+
+  &__social-links {
+    @include flex($alignment: center, $justification: space-between);
+    gap: 23px;
+    transform: translateY(-5px);
+
+    @include for-tablet-landscape-down {
+      margin-top: 41px;
+    }
+
+    @include for-phone-only {
+      margin-top: 31px;
+    }
+  }
+
+  &__copiright {
+    @include font-copiright-regular;
+    text-align: center;
+    transform: translateX(-3px);
+
+    @include for-phone-only {
+      font-size: 16px;
+      transform: translate(1px, 1px);
+    }
+  }
+}

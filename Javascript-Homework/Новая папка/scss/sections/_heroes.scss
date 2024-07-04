@@ -1,0 +1,44 @@
+.heroes__slider {
+    &-item {
+		img {
+			width: 100%;
+		}
+
+		position: relative;
+	}
+}
+
+.cta {
+	color: $brown-light;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+	position: absolute;
+	top: 120px;
+	right: 100px;
+
+    &__title {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 60.95px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+    &__btn {
+		padding: 15px 57px 15px 57px;
+		border: 2px solid $brown-light;
+		font-size: 18px;
+		line-height: 21.94px;
+		text-align: center;
+		background: transparent;
+		color: $brown-light;
+
+		&:hover {
+			background-color: $tomato-light;
+			transition: 0.3s ease-in-out;
+		}
+	}
+}

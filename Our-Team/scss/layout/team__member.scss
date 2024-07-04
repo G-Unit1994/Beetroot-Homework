@@ -1,0 +1,91 @@
+@use "../customs" as *;
+
+.team__member {
+  @include flex(column, center);
+  @extend %full-width;
+  padding-top: 40px;
+  padding-bottom: 122px;
+
+  &-inner {
+    @include flex;
+    @extend %full-width;
+    max-width: 1060px;
+
+    // @media screen and (max-width: 768px) {
+    //   @include flex(column, center);
+    // }
+  }
+
+  &-content-wrap {
+    @include flex(column, $justification: center);
+    flex-basis: $half-width;
+    padding-top: 65px;
+    padding: 65px 15px;
+    box-sizing: border-box;
+
+    &:first-child {
+      border-right: $border;
+    }
+
+    // @media screen and (max-width: 768px) {
+    //   &:first-child {
+    //     border-right: none;
+    //     border-bottom: $border;
+    //   }
+    // }
+  }
+
+  &-photo {
+    align-self: flex-start;
+  }
+
+  &-info {
+    @include flex(column, center);
+    align-self: flex-end;
+  }
+
+  &-name {
+    @include fonts(
+      $f-family: font("rob"),
+      $f-size: 2.25rem,
+      $f-weight: $fw-black,
+      $l-height: 1.17
+    );
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100px;
+      height: 1px;
+      background: $line-color;
+      left: calc($half-width - 49px);
+    }
+  }
+
+  &-position {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  &-social-links {
+    @include flex();
+  }
+
+  &-description {
+    @include fonts(
+      $f-size: 0.875rem,
+      $f-weight: $fw-medium,
+      $l-height: 1.71,
+      $color: $description-text-color
+    );
+    text-align: center;
+    max-width: 430px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+  }
+}

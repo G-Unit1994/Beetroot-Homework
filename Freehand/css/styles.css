@@ -1,0 +1,254 @@
+html {
+	font-size: 16px;
+}
+
+html, body, .freehand {
+	height: 100%;
+}
+
+/* Body start */
+body {
+	font-family: "Roboto", sans-serif;
+  font-weight: var(--fw-regular);
+  font-style: var(--fs-normal);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-color);
+}
+/* Body end */
+
+.freehand {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+	flex: 1 0 auto;
+ 	 width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+ }
+ 
+ a,
+ a:active,
+ a:focus,
+ a:visited {
+   outline: none;
+ }
+
+ /* Our services start */
+ .our__services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+ }
+
+ .our__services-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--secondary-text);
+ }
+
+ .our__services-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.013rem;
+  color: #16133D;
+ }
+ /* Our services end  */
+
+ /*  Our services cards start */
+.our__services-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  height: 340px;
+  margin-top: 40px;
+  gap: 30px;
+  margin-left: -30px;
+}
+
+.our__services-item {
+  border: var(--border-outer);
+  border-radius: var(--border-outer-radius);
+  width: 370px;
+  height: 340px;
+}
+
+.our__services-item:hover {
+  border: var(--border-outer-hover);
+  cursor: pointer;
+}
+
+.our__services-item:hover .our__services-image {
+  transition: all 0.5ms ease-in-out;
+}
+
+.our__services-content {
+  width: 290px;
+  height: 260px;
+  margin-top: 40.5px;
+  margin-left: 40px;
+}
+
+.our__services-image {
+  width: 64px;
+  height: 64px;
+  border: var(--border-inner);
+  border-radius: var(--border-inner-radius);
+  margin-bottom: 30px;
+}
+
+.our__services-icon {
+  width: 39px;
+  height: 37px;
+  margin-top: 14px;
+  margin-left: 13px;
+}
+
+.our__services-icon-color {
+  --light-color: var(--light-blue);
+  --lighten-color: var(--lighten-blue);
+  --middle-color: var(--middle-blue);
+  --dark-color: var(--dark-blue);
+}
+
+.our__services-name {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 21.28px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.our__services-description {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  width: 275px;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+.our__services-link {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--dark-green);
+}
+
+/* .our__services-content {
+  width: 290px;
+}
+
+
+ 
+ .our__services-image {
+  width: 64px;
+  height: 64px;
+  
+  margin-top: 40.5px;
+  margin-bottom: 30px;
+ }
+ 
+ .our__services-icon {
+ 
+ }
+
+
+
+
+
+
+ /* Our services cards end  */
+
+ /* Freehand Header start */
+.freehand__header {
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.freehand__header-inner {
+  display: flex;
+   justify-content: flex-start;
+}
+/* Freehand Header end */
+
+.logo__icon {
+  width: 200px;
+  height: 35px;
+  transform: translateX(-3px);
+  margin-top: 22.5px;
+}
+
+.horizontal__line {
+  border: none;
+  border-top: var(--horizontal-line);
+  width: 1440px;
+  margin-top: 12px;
+}
+
+/*  Footer start */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--text-color);
+  width: 1440px;
+  height: 193px;
+  margin-top: 100px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  margin-top: 40px;
+}
+
+.footer__socials {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--icon-border-radius);
+  background: var(--white);
+  gap: 10px;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+  margin-top: 9px;
+  margin-left: 9px;
+}
+/*  Footer end */
