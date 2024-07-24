@@ -1,6 +1,0 @@
-1) npx create-react-app travel-guide
-2) cd travel-guide
-3) npm install swiper
-4) Заходимо в файл App.js та змінюємо код
-5) Встановлення react-dom: npm install swiper react-router-dom
-6) Встановлення Інсталяція бібліотеки Leaflet: npm install leaflet react-leaflet
