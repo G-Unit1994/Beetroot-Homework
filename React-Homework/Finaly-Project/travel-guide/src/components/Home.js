@@ -37,6 +37,28 @@ const Home = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      {/* Додаємо нову секцію з популярними напрямками */}
+      <section id="popular-destinations">
+        <h2>Popular Destinations</h2>
+        <div className="destinations-grid">
+          <div className="destination-card">
+            <img src="/images/rome.jpg" alt="Rome" />
+            <h3>Rome</h3>
+            <p>Explore the ancient ruins and vibrant culture of Italy's capital.</p>
+          </div>
+          <div className="destination-card">
+            <img src="/images/barcelona.jpg" alt="Barcelona" />
+            <h3>Barcelona</h3>
+            <p>Experience the stunning architecture and lively streets of Barcelona.</p>
+          </div>
+          <div className="destination-card">
+            <img src="/images/sydney.jpg" alt="Sydney" />
+            <h3>Sydney</h3>
+            <p>Enjoy the beautiful beaches and iconic Sydney Opera House.</p>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };
