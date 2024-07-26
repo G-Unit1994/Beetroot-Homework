@@ -1,0 +1,17 @@
+/* swiper start */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Висота слайдера */
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 100px 0;
+}
+/* swiper end */
