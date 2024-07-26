@@ -6,7 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './App.css';
+import './styles.css';
 
 const App = () => {
   return (
