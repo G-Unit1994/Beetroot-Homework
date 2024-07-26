@@ -13,6 +13,7 @@ const Home = () => {
     <section id="home">
       <h2>Welcome to the Travel Guide</h2>
       <Swiper
+        modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={30}
         effect="fade"
         navigation
