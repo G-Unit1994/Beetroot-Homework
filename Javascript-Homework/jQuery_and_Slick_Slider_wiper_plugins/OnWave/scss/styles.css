@@ -243,11 +243,11 @@ body {
   }
 
   .arrivals-slider__prev:active {
-    background: url("/images/prev_active.svg");
+    background: url("../images/prev_active.svg");
   }
 
   .arrivals-slider__next:active {
-    background: url("./images/next_active.svg");
+    background: url("../images/next_active.svg");
   } 
   /* Arrivals end */
 
@@ -316,7 +316,7 @@ body {
     top: 50%;
     height: 74px;
     width: 40px;
-    background: url("./images/prev.svg");
+    background: url("../images/prev.svg");
   }
 
  .partners-slider__next {
@@ -330,11 +330,11 @@ body {
 }
 
  .partners-slider__prev:active {
-    background: url("/images/prev_active.svg");
+    background: url("../images/prev_active.svg");
   }
 
   .partners-slider__next:active {
-    background: url("./images/next_active.svg");
+    background: url("../images/next_active.svg");
   }
 
   /* Partners end */
