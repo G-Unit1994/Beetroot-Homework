@@ -1,58 +1,32 @@
-var firstName = "John";
-var lastName = "Doe";
-var firstName = "John";
-var lastName = "Doe";
-// Неправильні імена змінних (закоментовані)
-        // var 123name = "Invalid"; // Неправильне ім'я через початок з цифри
-        // var first Name = "Invalid"; // Неправильне ім'я через пробіл
-        // var last@name = "Invalid"; // Неправильне ім'я через спеціальний символ
+alert('Привіт')
+let whatName = prompt('Як тебе звати?')
+alert(`Привіт, ${whatName}`)
+let yourAge = prompt('Скажи рік свого народження ?');
+let CURRENT_YEAR = 2024;
+let age = CURRENT_YEAR - yourAge;
+alert(`Тобі, ${age}`)
+let cube = prompt('Яка довжина, однієї сторони квадрату ?')
+const CUBE_PERUMETR = cube * 4;
+alert(`Периметр квадрату, ${CUBE_PERUMETR}см`)
+let radius = prompt('Введіть радіус кола?')
+const PLOHA_CIRCLE = 3.14 * radius ** 2;
+alert(`Площа кола становить ${PLOHA_CIRCLE}`)
+let distance = prompt('Яка відстань між двома містами ?')
+let time = prompt('За скільки годин ви хочете дістатися, з точки А в точку Б?')
+const SPEED = distance / time;
+alert(`Швидкість з якою ви будете рухатися, становить ${SPEED}км/год`)
+let dollars = prompt(`Ведіть, скіль би ви хотіли перевести $ в €?`)
+const EVRO = 0.93445;
+const DOLLAR_EVRO = dollars * EVRO;
+alert(`Ви придбали ${DOLLAR_EVRO}€! Дякуємо`)
 
-        // Коментарі можна створювати таким чином:
-        // Однорядковий коментар
-
-        /*
-            Багаторядковий коментар
-        */
-
-        /**
-         * Коментар для документації
-         * Докладний опис функції або змінної
-         */
-
-        // Стилі написання імен змінних
-        var camelCaseVariable; // Камелкейс (camelCase)
-        var snake_case_variable; // Змінна зі змінними (snake_case)
-        var PascalCaseVariable; // Паскалькейс (PascalCase)
-        var HungarianNotationVariable; // Угорська нотація (HungarianNotation)
-
-        // Запит ім'я користувача та виведення вітання
-        var userName = prompt("Як вас звати?");
-        alert("Привіт, " + userName + "!");
-
-        // Порахунок віку користувача
-        const currentYear = new Date().getFullYear();
-        var birthYear = prompt("Введіть рік вашого народження:");
-        var age = currentYear - birthYear;
-        alert("Вам " + age + " років.");
-
-        // Запит довжини сторони квадрата та обчислення периметра
-        var sideLength = prompt("Введіть довжину сторони квадрата:");
-        var perimeter = 4 * parseInt(sideLength);
-        alert("Периметр квадрата: " + perimeter);
-
-        // Запит радіусу кола та обчислення площі
-        var radius = prompt("Введіть радіус кола:");
-        var area = Math.PI * Math.pow(radius, 2);
-        alert("Площа кола: " + area.toFixed(2));
-
-        // Запит відстані та часу подорожі для обчислення швидкості
-        var distance = prompt("Введіть відстань між містами (в км):");
-        var travelTime = prompt("Введіть час подорожі (в годинах):");
-        var speed = distance / travelTime;
-        alert("Необхідна швидкість: " + speed.toFixed(2) + " км/год");
-
-        // Конвертор валют (долари в євро)
-        const usdToEuroRate = 0.85;
-        var usdAmount = prompt("Введіть суму в доларах:");
-        var euroAmount = usdAmount * usdToEuroRate;
-        alert("Сума в євро: " + euroAmount.toFixed(2));
+let alertConfirm = confirm(`
+Ваша історія.
+Ім'я: ${whatName};
+Вік: ${age};
+Периметр квадрату: ${CUBE_PERUMETR}см;
+Площа кола: ${PLOHA_CIRCLE};
+Необхідна швидкість, для 
+подолання відстані в ${distance}км за ${time}г : ${SPEED}км/год;
+Кількість придбаних євро: ${DOLLAR_EVRO}€;
+`)
