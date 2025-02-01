@@ -1,4 +1,4 @@
-<script>
+
          var firstName = "John";
         var lastName = "Doe";
 
@@ -59,4 +59,4 @@
         var usdAmount = prompt("Введіть суму в доларах:");
         var euroAmount = usdAmount * usdToEuroRate;
         alert("Сума в євро: " + euroAmount.toFixed(2));
-    </script>
+    
