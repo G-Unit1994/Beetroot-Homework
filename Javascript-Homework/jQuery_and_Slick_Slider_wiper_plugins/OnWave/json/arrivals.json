@@ -11,28 +11,28 @@
 		"id": 2,
 		"name": "Hagstrom Tremar Viking Deluxe Cloudy Seas",
 		"price": "€1.300,00",
+	    	"inStock": true,
 		"img": "./images/arrivals/termar.png"
-		"inStock": true
 	},
 	{
 		"id": 3,
 		"name": "Gibson Les Paul Standard 60s",
 		"price": "€3.749,00",
-		"img": "../images/arrivals/gibson.png"
-		"inStock": false
+		"inStock": false,
+		"img": "./images/arrivals/gibson.png"
 	},
 	{
 		"id": 4,
 		"name": "Suhr Standard Plus Trans Blue Denim",
 		"price": "€3.449,00",
-		"img": "../images/arrivals/plus.png"
-		"inStock": true
+		"inStock": true,
+		"img": "./images/arrivals/plus.png"
 	},
 	{
 		"id": 5,
 		"name": "Fender Telecaster Black Paisley Limited Edition",
 		"price": "€1.499,00",
-		"img": "../images/arrivals/telecaster.png"
-		"inStock": false
+		"inStock": false,
+		"img": "./images/arrivals/telecaster.png"
 	}
 ]
