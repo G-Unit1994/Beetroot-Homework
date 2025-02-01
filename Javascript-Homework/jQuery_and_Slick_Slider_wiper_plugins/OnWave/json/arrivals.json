@@ -3,8 +3,8 @@
         "id": 1,
 		"name": "Hagstrom Alvar Limited Edition",
 		"price": "€2.990,00",
-        "img": "../images/arrivals/alvar.png",
-        "inStock": true
+	    	"inStock":true,
+        "img": "./images/arrivals/alvar.png"
     },
 
     {
