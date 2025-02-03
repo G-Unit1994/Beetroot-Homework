@@ -2,15 +2,15 @@
 @import "../../../shared/css/libs/reset.css";
 
 /* abstracts */
-@import "./abstracts/fonts.css";
-@import "./abstracts/core.css";
-@import "./abstracts/variables.css";
+@import "./Abstracts/fonts.css";
+@import "./Abstracts/core.css";
+@import "./Abstracts/variables.css";
 
 /* components */
-@import "./components/header.css";
-@import "./components/banner.css";
-@import "./components/about.css";
-@import "./components/skills.css";
-@import "./components/portfolio.css";
-@import "./components/footer.css";
-@import "./components/button.css";
+@import "./Components/header.css";
+@import "./Components/banner.css";
+@import "./Components/about.css";
+@import "./Components/skills.css";
+@import "./Components/portfolio.css";
+@import "./Components/footer.css";
+@import "./Components/button.css";
