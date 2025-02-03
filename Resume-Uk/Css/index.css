@@ -1,0 +1,12 @@
+@import "./libs/reset.css";
+
+/* abstracts */
+@import "./Abstracts/main.css";
+@import "./Abstracts/variables.css";
+
+/* components */
+@import "./Components/header.css";
+@import "./Components/card.css";
+@import "./Components/aside.css";
+@import "./Components/main.css";
+@import "./Components/footer.css";
