@@ -1,0 +1,119 @@
+/* Центруємо форму */
+.inform {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для кожного рядка (лейбл + інпут) */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    max-width: 450px; /* Обмежуємо максимальну ширину */
+}
+
+/* Лейбли */
+label {
+    width: 180px; /* Фіксована ширина */
+    margin-right: 100px;
+}
+
+/* Поля вводу */
+.input {
+    width: 250px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-right: -94px;
+    text-align: left;
+}
+
+.input__age {
+    margin-right: 81px;
+    padding: 5px;
+}
+
+.input__country {
+    width: 45%;
+    margin-right: -55px;
+}
+
+.input-select__course {
+    margin-right: -21px;
+    padding: 6px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* Радіокнопки */
+.gender-group {
+    display: flex;
+    justify-content: center; /* Вирівнюємо по центру */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    gap: 10px; /* Відступ між кнопками */
+    margin-top: 10px;
+}
+
+.radio {
+    margin: 0;
+}
+.radio-group {
+    margin-right: -10px;
+}
+
+.gender {
+    font-size: 16px;
+}
+
+.gender-label {
+    margin-right: 10px;
+}
+
+/* Чекбокс */
+
+.agreement-label {
+    width: 109%;
+    margin-right: 89px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 8px;
+}
+
+/* Кнопки */
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button__submit {
+    margin-right: 42px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

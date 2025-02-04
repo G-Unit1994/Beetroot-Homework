@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <main>
+        <form name="course-apply" action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="inform"><b>Інформація акаунту</b></legend>
+
+                <div class="form-group">
+                    <label class="fields__name" for="name">Повне ім'я</label>
+                    <input class="input name" type="text" id="name" name="name" placeholder="Іванець Іванна Іванівна" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="fields__email" for="email">Email</label>
+                    <input class="input email" type="email" id="email" name="email" placeholder="iva@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="fields__password" for="password">Пароль</label>
+                    <input class="input password" type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="fields__password-repeat" for="password-repeat">Пароль ще раз</label>
+                    <input class="input password-repeat" type="password" id="password-repeat" name="password-repeat" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Додаткова інформація</legend>
+                <div class="form-group">
+                    <label for="age">Вік</label>
+                    <input class="input__age" type="number" id="age" name="age" min="16" max="110" required>
+                </div>
+
+                <div class="form-group gender-group">
+                    <label>Стать</label>
+                    <div class="radio-group">
+                        <input class="radio" type="radio" id="male-gender" name="gender" value="male" required>
+                        <label class="gender-label" for="male-gender">Чоловіча</label>
+
+                        <input class="radio" type="radio" id="female-gender" name="gender" value="female" required>
+                        <label class="gender-label" for="female-gender">Жіноча</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Навчання</legend>
+
+                <div class="form-group">
+                    <label for="course">Курс</label>
+                    <select class="input-select__course" id="course" name="course" required>
+                        <option value="">-= Виберіть курс =-</option>
+                        <optgroup label="Технічні напрямки">
+                            <option value="front-end">Front-End</option>
+                            <option value="back-end">Back-End</option>
+                        </optgroup>
+                        <optgroup label="Менеджмент">
+                            <option value="project-management">Project Management</option>
+                        </optgroup>
+                        <optgroup label="Тестування">
+                            <option value="qa-manual">QA Manual</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактні дані</legend>
+
+                <div class="form-group">
+                    <label for="adress">Повна адреса</label>
+                    <textarea class="input__country" id="adress" name="adress" cols="24" rows="3" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number">Телефон</label>
+                    <input class="input tell" type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
+                </div>
+            </fieldset>
+
+            <div class="form-group checkbox-group">
+                <input class="checkbox" type="checkbox" id="agreement" name="agreement" required>
+                <label class="agreement-label" for="agreement">Я погоджуюсь з обробкою персональних даних</label>
+            </div>
+
+            <div class="button-container">
+                <button class="button__reset" type="reset">Очистити форму</button>
+                <button class="button__submit" type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
